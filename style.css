@@ -53,6 +53,7 @@ section{
     gap: 10px;
     box-shadow: -4px 2px 15px -11px #B0D9B1;
     max-width: 374px;
+    height: -webkit-fill-available;
 }
 
 .gradient__image-container{
