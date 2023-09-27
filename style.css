@@ -44,6 +44,7 @@ section{
     grid-template-rows: auto;
     gap: 20px;
     padding-top: 50px;
+    place-items: center;
 }
 .gradient__item{
     border: 1px solid #F9F3CC;
@@ -51,6 +52,7 @@ section{
     display: grid;
     gap: 10px;
     box-shadow: -4px 2px 15px -11px #B0D9B1;
+    max-width: 374px;
 }
 
 .gradient__image-container{
