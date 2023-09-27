@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Css-Gradients</h1>
+    <section class="linear-gradient">
+        <h2 class="gradient__heading">Linear Gradient</h2>
+        <div class="gradient__items-wrapper">
+            <article class="gradient__item">
+                <div class="gradient__image-container simple-linear"></div>
+                <p class="gradient__css-code"><code>.simple-linear{
+                    background: linear-gradient(blue , pink);
+                }</code></p>
+                <h3 class="gradient__title">Basic Linear Gradient</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container to-top"></div>
+                <p class="gradient__css-code"><code>.to-top{
+                    background: linear-gradient(to top , blue , pink);
+                }</code></p>
+                <h3 class="gradient__title">Direction - TO-TOP</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container to-right"></div>
+                <p class="gradient__css-code"><code>.to-right{
+                    background: linear-gradient(to right , blue , pink);
+                }</code></p>
+                <h3 class="gradient__title">Direction - TO-RIGHT</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container to-bottom"></div>
+                <p class="gradient__css-code"><code>.to-bottom{
+                    background: linear-gradient(to bottom , blue , pink);
+                }</code></p>
+                <h3 class="gradient__title">Direction - TO-BOTTOM</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container to-left"></div>
+                <p class="gradient__css-code"><code>.to-left{
+                    background: linear-gradient(to left , blue , pink);
+                }</code></p>
+                <h3 class="gradient__title">Direction - TO-LEFT</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container angled-gradient"></div>
+                <p class="gradient__css-code"><code>.angled-gradient{
+                    background: linear-gradient(45deg , blue , pink);
+                }</code></p>
+                <h3 class="gradient__title">Angled</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container linear-multi-color"></div>
+                <p class="gradient__css-code"><code>.linear-multi-color{
+                    background: linear-gradient(blue,pink ,#00ff3f , #971a1a);
+                }</code></p>
+                <h3 class="gradient__title">Multi Color</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container linear-color-stop"></div>
+                <p class="gradient__css-code"><code>.linear-color-stop{
+                    background : linear-gradient(to right , blue 20px , pink 50% , #00ff3f)
+                }</code></p>
+                <h3 class="gradient__title">Color Stop</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container solid-colors"></div>
+                <p class="gradient__css-code"><code>.solid-colors{
+                    background: linear-gradient(top bottom left , blue 50% , pink 50%);
+                }</code></p>
+                <h3 class="gradient__title">Creating Solid Color combination diagonal..</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container color-hint"></div>
+                <p class="gradient__css-code"><code>.color-hint{
+                    background: linear-gradient(blue ,20%, pink);
+                }</code></p>
+                <h3 class="gradient__title">Gradient Hints</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container color-bands"></div>
+                <p class="gradient__css-code"><code>.color-bands{
+                    background: linear-gradient(blue 0%  30% , pink 30% 50% , #00ff3f 50% 70% , #971a1a);
+                }</code></p>
+                <h3 class="gradient__title">Color Bands</h3>
+            </article>  
+        </div>
+    </section>
+    <section class="radial-gradient">
+        <h2 class="gradient__heading">Radial Gradient</h2>
+        <div class="gradient__items-wrapper">
+            <article class="gradient__item">
+                <div class="gradient__image-container simple-radial"></div>
+                <p class="gradient__css-code"><code>.simple-radial{
+                    background: radial-gradient(red, blue);
+                }</code></p>
+                <h3 class="gradient__title">Basic Radial Gradient</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container position-radial-color"></div>
+                <p class="gradient__css-code"><code>.position-radial-color{
+                    background: radial-gradient(red 10px, yellow 30%, #1e90ff 50%);
+                }</code></p>
+                <h3 class="gradient__title">Positioning Radial Color</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container radial-center-positioning"></div>
+                <p class="gradient__css-code"><code>.radial-center-positioning{
+                    background: radial-gradient(at 0% 30%, red 10px, yellow 30%, #1e90ff 50%);
+                }</code></p>
+                <h3 class="gradient__title">Positioning Center of Radial Gradient</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container radial-center-positioning-closest-side"></div>
+                <p class="gradient__css-code"><code>.radial-center-positioning-closest-side{
+                    background: radial-gradient(ellipse closest-side at 25% 75%,
+                    red,
+                    yellow 10%,
+                    #1e90ff 50%,
+                    beige);
+                }</code></p>
+                <h3 class="gradient__title">Radial Ellipse Closest Side</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container radial-center-positioning-closest-corner"></div>
+                <p class="gradient__css-code"><code>.radial-center-positioning-closest-corner{
+                    background: radial-gradient(ellipse closest-corner at 25% 75%,
+                    red,
+                    yellow 10%,
+                    #1e90ff 50%,
+                    beige);
+                }</code></p>
+                <h3 class="gradient__title">Radial Ellipse Closest Corner</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container radial-center-positioning-farthest-side"></div>
+                <p class="gradient__css-code"><code>.radial-center-positioning-farthest-side{
+                    background: radial-gradient(ellipse farthest-side at 90% 90% ,
+                    red,
+                    yellow 10%,
+                    #1e90ff 50%,
+                    beige);
+                }</code></p>
+                <h3 class="gradient__title">Radial Ellipse Farthest Side</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container radial-center-positioning-farthest-corner"></div>
+                <p class="gradient__css-code"><code>.radial-center-positioning-farthest-corner{
+                    background: radial-gradient(ellipse farthest-corner at 90% 90%,
+                    red,
+                    yellow 10%,
+                    #1e90ff 50%,
+                    beige);
+                }</code></p>
+                <h3 class="gradient__title">Radial Ellipse Farthest Corner</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container radial-circle-size"></div>
+                <p class="gradient__css-code"><code>.radial-circle-size {
+                    background: radial-gradient(circle 50px, red, yellow 10%, #1e90ff 50%, beige);
+                  }</code></p>
+                <h3 class="gradient__title">Radial Circle Size</h3>
+            </article>
+        </div>
+    </section>
+    <section class="conic-gradient">
+        <h2 class="gradient__heading">Conic Gradient</h2>
+        <div class="gradient__items-wrapper">
+            <article class="gradient__item">
+                <div class="gradient__image-container simple-conic"></div>
+                <p class="gradient__css-code"><code> .simple-conic{
+                    background: conic-gradient(red , blue);
+                  }</code></p>
+                <h3 class="gradient__title">Basic Conic Gradient</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container conic-center-position"></div>
+                <p class="gradient__css-code"><code>.conic-center-position{
+                    background: conic-gradient( at 0% 30%, red 10% , yellow 30% , #00ff3f 50%);
+                  }</code></p>
+                <h3 class="gradient__title">Conic Center Positioning</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container conic-gradient-angle"></div>
+                <p class="gradient__css-code"><code>.conic-gradient-angle{
+                    background: conic-gradient(from 45deg , red , orange 50% yellow 85% , green);
+                }</code></p>
+                <h3 class="gradient__title">Conic Gradient with Angle</h3>
+            </article>
+        </div>
+    </section>
+    <section class="repeating-linear-gradient">
+        <h2 class="gradient__heading">Repeating Gradient's</h2>
+        <div class="gradient__items-wrapper">
+            <article class="gradient__item">
+                <div class="gradient__image-container horizontal-bars"></div>
+                <p class="gradient__css-code"><code>.horizontal-bars{
+                    background: repeating-linear-gradient(-45deg , transparent , transparent 20px black 20px black 40px);
+                }</code></p>
+                <h3 class="gradient__title">Repeating Linear Gradient</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container concentric-circles"></div>
+                <p class="gradient__css-code"><code>.concentric-circles{
+                    background: repeating-radial-gradient(black, black 5px , white 5px , white 10px);
+                }</code></p>
+                <h3 class="gradient__title">Repeating Radial Gradient</h3>
+            </article>
+            <article class="gradient__item">
+                <div class="gradient__image-container metal-shine"></div>
+                <p class="gradient__css-code"><code>.metal-shine{
+                    background: repeating-conic-gradient( #848482 20% , #cbcdcd 15% , #848482 33% );
+                }</code></p>
+                <h3 class="gradient__title">Repeating Conic Gradient</h3>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

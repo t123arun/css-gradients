@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mooli', sans-serif;
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+    padding: 20px;
+}
+
+h1{
+    font-size: 3rem;
+    color: #8EACCD;
+}
+h2{
+    font-size: 2rem;
+    color: #79AC78;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin: 0 auto;
+}
+h3{
+    font-size: 1.5rem;
+    color: #FFB000;
+}
+section{
+    display: grid;
+    row-gap: 1.5rem;
+    border-bottom: 2px dashed #D7E5CA;
+    padding: 0 0 150px 0;
+    width: 100%;
+}
+.gradient__css-code{
+    background-color: #F9F3CC;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.gradient__items-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-top: 50px;
+}
+.gradient__item{
+    border: 1px solid #F9F3CC;
+    padding: 5px;
+    display: grid;
+    gap: 10px;
+    box-shadow: -4px 2px 15px -11px #B0D9B1;
+}
+
+.gradient__image-container{
+    width: 100%;
+    height: 200px;
+}
+.gradient__css-code code{
+    display: block;
+    background: #FFFDE1;
+    padding: 4px;
+}
+.simple-linear{
+    background: linear-gradient(blue , pink);
+}
+.to-top{
+    background: linear-gradient(to top , blue , pink);
+}
+.to-right{
+    background: linear-gradient(to right , blue , pink);
+}
+.to-bottom{
+    background: linear-gradient(to bottom , blue , pink);
+}
+.to-left{
+    background: linear-gradient(to left , blue , pink);
+}
+
+.angled-gradient{
+    background: linear-gradient(45deg , #00ff3f , #971a1a);
+}
+.linear-multi-color{
+    background: linear-gradient(blue,pink ,#00ff3f , #971a1a);
+}
+
+.linear-color-stop{
+    background : linear-gradient(to right , blue 20px , pink 50% , #00ff3f)
+}
+
+.solid-colors{
+    background: linear-gradient(to bottom left , blue 50% , pink 50%);
+}
+.color-hint{
+    background: linear-gradient(blue ,20%, pink);
+}
+.color-bands{
+    background: linear-gradient(blue 0%  30% , pink 30% 50% , #00ff3f 50% 70% , #971a1a);
+}
+
+.simple-radial{
+    background: radial-gradient(red, blue);
+}
+.position-radial-color{
+    background: radial-gradient(red 10px, yellow 30%, #1e90ff 50%);
+}
+.radial-center-positioning{
+    background: radial-gradient(at 0% 30%, red 10px, yellow 30%, #1e90ff 50%);
+}
+.radial-center-positioning-closest-side{
+    background: radial-gradient(ellipse closest-side at 25% 75%,
+    red,
+    yellow 10%,
+    #1e90ff 50%,
+    beige);
+}
+.radial-center-positioning-closest-corner{
+    background: radial-gradient(ellipse closest-corner at 25% 75%,
+    red,
+    yellow 10%,
+    #1e90ff 50%,
+    beige);
+}
+.radial-center-positioning-farthest-side{
+    background: radial-gradient(ellipse farthest-side at 90% 90% ,
+    red,
+    yellow 10%,
+    #1e90ff 50%,
+    beige);
+}
+.radial-center-positioning-farthest-corner{
+    background: radial-gradient(ellipse farthest-corner at 90% 90%,
+    red,
+    yellow 10%,
+    #1e90ff 50%,
+    beige);
+}
+.radial-circle-size {
+    background: radial-gradient(circle 50px, red, yellow 10%, #1e90ff 50%, beige);
+  }
+
+  .simple-conic{
+    background: conic-gradient(red , blue);
+  }
+
+  .conic-center-position{
+    background: conic-gradient( at 0% 30%, red 10% , yellow 30% , #00ff3f 50%);
+  }
+
+.conic-gradient-angle{
+    background: conic-gradient(from 45deg, red, orange 50%, yellow 85%, green);
+}
+
+.horizontal-bars{
+    background: repeating-linear-gradient(-45deg,
+    transparent,
+    transparent 20px,
+    black 20px,
+    black 40px);
+}
+.concentric-circles{
+    background: repeating-radial-gradient(black, black 5px , white 5px , white 10px);
+}
+.metal-shine{
+    background: repeating-conic-gradient( #848482 20% , #cbcdcd 15% , #848482 33% );
+}
